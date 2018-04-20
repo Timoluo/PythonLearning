@@ -21,7 +21,7 @@ False
 >>> d.get('Thomas', -1)
 -1
 
-## 注意：返回*None*的时候Python的交互环境不显示结果。
+## 注意：返回*None*的时候Python的交互环境不显示结果。 ##然而现在网页上的practice也显示了
 
 #要删除一个key，用pop(key)方法，对应的value也会从dict中删除：
 
@@ -43,8 +43,8 @@ False
 
 # dict可以用在需要高速查找的很多地方， ***要牢记的第一条就是dict的key必须是**不可变对象**。
 
-# 这个通过key计算value位置的算法称为*哈希算法（Hash）。要保证hash的正确性，key的对象就不能变。
-# 在Python中，字符串、整数等都是不可变的，可以放心地作为key。而list是可变的，就不能作为key。
+# 通过key计算value位置的算法称为*哈希算法（Hash）。要保证hash的正确性，key的对象就不能变。
+# Python中，字符串、整数等都是不可变的，可以放心地作为key。而list是可变的，就不能作为key。
 
 
 ##set和dict类似，但只存储key,不存储value。且key不能重复。
