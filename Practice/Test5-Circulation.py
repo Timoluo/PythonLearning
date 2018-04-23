@@ -33,7 +33,7 @@ print(acc)
 L = ['Bart', 'Lisa', 'Adam']
 n = len(L)
 while n>0:
-   n=n-1          #因为数组从0开始，所以先减一方便取值
+   n=n-1          #因为数组从0开始，所以先减一方便取值；此为倒序输出
    print("Hello, %s" % L[n])  
 
 

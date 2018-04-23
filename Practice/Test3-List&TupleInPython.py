@@ -3,7 +3,7 @@
 ## list是一种有序的集合，可以随时添加和删除其中的元素
 
 # 用len()函数可以获得list元素的个数
-# 索引是从0开始的,当索引超出了范围时，Python会报一个IndexError越界错误，
+# 索引是从0开始的,当索引超出了范围时，Python会报一个IndexError越界错误;-1会返回倒数第一个值
 # 记得最后一个元素的索引是len(classmates) - 1
 
 # list是一个可变的有序表，所以，可以往list中追加元素到末尾
@@ -38,7 +38,7 @@
 
 ## tuple 元组，和list非常类似，但是tuple一旦初始化就不能修改
 
-# 获取元素的方法和list是一样的，你可以正常地使用classmates[0]，classmates[-1]
+# 获取元素的方法和list是一样的，你可以正常地使用classmates[0]，classmates[-1] #最后一位
 # 没有append()，insert()；也不能赋值成另外的元素 ->  **安全**
 
 #tuple的陷阱：当你定义tuple时，在定义的时候，tuple的元素就必须被确定下来 （类似数组长度一定）
