@@ -58,6 +58,7 @@ True
 
 ## 凡是可作用于for循环的对象都是Iterable类型；
 ## 凡是可作用于next()函数的对象都是Iterator类型，它们表示一个惰性计算的序列；
+## 由于惰性，经常要用list（）来直接获取iterator；直接Next出来的值，是生成一次就销毁的
 
 ## 集合数据类型如list、dict、str等是Iterable但不是Iterator，
 ## 不过可以通过iter()函数获得一个Iterator对象。
@@ -79,4 +80,8 @@ while True:
     except StopIteration:
         # 遇到StopIteration就退出循环
         break
+
+
+
+
 

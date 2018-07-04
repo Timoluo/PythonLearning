@@ -139,3 +139,37 @@ for i, value in enumerate(['A', 'B', 'C']):
 print('iter [(1, 1), (2, 4), (3, 9)]:')
 for x, y in [(1, 1), (2, 4), (3, 9)]:
     print(x, y)
+
+
+##for in
+    
+#use it with a string, it loops over its characters.
+>>> for c in "py":
+...     print c
+...
+p
+y
+
+#use it with a file, it loops over lines of the file.
+>>> for line in open("a.txt"):
+...     print line,
+...
+first line
+second line
+
+#use it with a dictionary, it loops over its keys.
+>>> for k in {"x": 1, "y": 2}:
+...     print k
+...
+y
+x
+
+# some ineteresting function
+>>> ",".join(["a", "b", "c"])
+'a,b,c'
+>>> ",".join({"x": 1, "y": 2})
+'y,x'
+>>> list("python")
+['p', 'y', 't', 'h', 'o', 'n']
+>>> list({"x": 1, "y": 2})
+['y', 'x']

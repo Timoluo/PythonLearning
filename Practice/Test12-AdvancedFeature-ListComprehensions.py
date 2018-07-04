@@ -80,6 +80,14 @@ False
 L1 = ['Hello', 'World', 18, 'Apple', None]
 
 L2 = [v.lower() for i,v in enumerate L1  if isinstance(v,str)]
-print('L2 =',L2)
+print('L2 =',L2)        #enumerate能像.item()一样，读取index和value
 
 # L2 = [s.lower() for s in L1 if (isinstance(s,str))]
+
+
+# we want to find first 10 (or any n) pythogorian triplets. A triplet (x, y, z)
+# is called pythogorian triplet if x*x + y*y == z*z.
+>>> pyt = ((x, y, z) for z in integers() for y in xrange(1, z) for x in range(1, y) if x*x + y*y == z*z)
+>>> take(10, pyt)
+#[(3, 4, 5), (6, 8, 10), (5, 12, 13), (9, 12, 15), (8, 15, 17), (12, 16, 20),
+# (15, 20, 25),(7, 24, 25), (10, 24, 26), (20, 21, 29)]
