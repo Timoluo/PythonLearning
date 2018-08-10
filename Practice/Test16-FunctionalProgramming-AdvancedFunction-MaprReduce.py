@@ -60,12 +60,12 @@ def str2int(s):
 
 # -*- coding: utf-8 -*-
 def normalize(name):  
-    return name.title()
+    return name.title()   #默认把首字母大写，其他小写的函数；Captial只做大写
   pass
 
 # 测试:
 L1 = ['adam', 'LISA', 'barT']
-L2 = list(map(normalize, L1))
+L2 = list(map(normalize, L1))     #normalize 使字符串都小写
 print(L2)
 
 
