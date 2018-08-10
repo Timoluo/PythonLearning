@@ -38,8 +38,8 @@ def _not_divisible(n):                #代表 取出不能被之前的数整除�
     return lambda x: x % n > 0        #x之后会由it列的数代替
 
 def primes():
-    yield 2
-    it = _odd_iter() # 初始序列
+    yield 2          # 取第一个素数2
+    it = _odd_iter() # 初始奇数序列
     while True:                             #取出it中的n，不断筛选it后面的数
         n = next(it) # 返回序列的第一个数     
         yield n
