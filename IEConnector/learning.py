@@ -16,7 +16,7 @@ python3 learning.py
 import sys
 from datetime import datetime
 
-CERT_EXPIRES = '2018-07-01'
+CERT_EXPIRES = '2028-07-01'
 
 def check_version():
     v = sys.version_info
